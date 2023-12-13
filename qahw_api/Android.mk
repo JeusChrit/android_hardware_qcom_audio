@@ -4,11 +4,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-libqahwapi-inc := $(LOCAL_PATH)/inc
-
 LOCAL_MODULE := libqahw
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES   := $(libqahwapi-inc)
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/inc
 
 LOCAL_SRC_FILES := \
     src/qahw_api.cpp

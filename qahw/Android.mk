@@ -5,11 +5,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-libqahw-inc := $(LOCAL_PATH)/inc
-
 LOCAL_MODULE := libqahwwrapper
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES   := $(libqahw-inc)
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/inc
 
 LOCAL_HEADER_LIBRARIES := libutils_headers \
     libsystem_headers \
